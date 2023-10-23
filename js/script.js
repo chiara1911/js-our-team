@@ -77,7 +77,7 @@ btn.addEventListener('click', function(){
  const newEmployer = {
     name: document.getElementById('newName').value,
     role: document.getElementById('newRole').value,
-    picture: document.getElementById('formFile').value,
+    picture: document.getElementById('newPicture').value,
  }
  ourTeam.push(newEmployer);
 printBox(newEmployer);

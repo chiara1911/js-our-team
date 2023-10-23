@@ -1,7 +1,25 @@
 
 
 main{
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    padding: 150px;
+    padding: 50px;
+    background-color: #606c38;
+}
+
+.box-card{
+    border: solid 3px black;
+    margin: 10px;
+    background-color: #a3b18a;
+    color: #dad7cd;
+    border-radius: 5px;
+  
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.text-color{
+    color: #dad7cd;
 }
