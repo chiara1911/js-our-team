@@ -60,7 +60,7 @@ const ourTeam = [
         picture: 'barbara-ramos-graphic-designer.jpg'
     }
 ];
-console.log(ourTeam);
+
 const rowEl = document.querySelector('.row');
 
 
@@ -69,6 +69,20 @@ for (let i = 0; i < ourTeam.length; i++) {
     printBox(ourTeam[i]);
 
 };
+
+// creare nuova card
+
+const btn = document.querySelector('button');
+btn.addEventListener('click', function(){
+ const newEmployer = {
+    name: document.getElementById('newName').value,
+    role: document.getElementById('newRole').value,
+    picture: document.getElementById('formFile').value,
+ }
+ ourTeam.push(newEmployer);
+printBox(newEmployer);
+
+});
 // creo funzione per mettere le box dentro a html
 function printBox(team) {
     const col = document.createElement("div");
@@ -82,9 +96,6 @@ function printBox(team) {
             </div> 
          </div> 
         `;
-    console.log(team.role);
-    console.log(team.picture);
-    console.log(team.name);
     col.innerHTML = template;
     rowEl.append(col);
 
