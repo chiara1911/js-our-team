@@ -61,7 +61,7 @@ const ourTeam = [
     }
 ];
 console.log(ourTeam);
-const rowEl = document.querySelector('row');
+const rowEl = document.querySelector('.row');
 
 
 // ciclo per stampare gli elementi dell'array
