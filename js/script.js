@@ -84,13 +84,13 @@ printBox(newEmployer);
 
 });
 // creo funzione per mettere le box dentro a html
-function printBox(team) {
+function printBox(team){
     const col = document.createElement("div");
     col.classList.add("col-4");
     const template = `     
         <div class="box-card ">
             <img src="/img/${team.picture}" alt=""> 
-            <div class = "d-flex flex-column align-items-center p-2">         
+            <div class ="d-flex flex-column align-items-center" id="text-card">         
             <h3>${team.name}</h3>       
             <h4>${team.role}</h4>   
             </div> 
@@ -98,5 +98,4 @@ function printBox(team) {
         `;
     col.innerHTML = template;
     rowEl.append(col);
-
 };

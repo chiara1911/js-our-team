@@ -1,7 +1,7 @@
 
 
 main{
-    width: 100vw;
+    width: 100%;
     height: 100%;
     padding: 50px;
     background-color: #606c38;
@@ -9,11 +9,11 @@ main{
 
 .box-card{
     border: solid 3px black;
-    margin: 10px;
+    margin: 5px;
     background-color: #a3b18a;
     color: #dad7cd;
     border-radius: 5px;
-  
+
 }
 
 img{
@@ -22,4 +22,7 @@ img{
 }
 .text-color{
     color: #dad7cd;
+}
+#text-card{
+    border-top: solid 2px black;
 }
