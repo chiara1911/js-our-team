@@ -65,24 +65,27 @@ const rowEl = document.querySelector('.row');
 
 
 // ciclo per stampare gli elementi dell'array
-for(let i = 0; i < ourTeam.length; i++){
+for (let i = 0; i < ourTeam.length; i++) {
     printBox(ourTeam[i]);
-   
+
 };
 // creo funzione per mettere le box dentro a html
-function printBox(team){
+function printBox(team) {
     const col = document.createElement("div");
     col.classList.add("col-4");
-    const template =` 
-        <div class="box-card">
-            <img src="/img/${team.picture}" alt="">  
-            <h4>${team.role}</h4>  
-            <h5>${team.name}</h5>          
-         </div> `;    
-         console.log(team.role);
-         console.log(team.picture);
-         console.log(team.name);
-    col.innerHTML = template;   
+    const template = `     
+        <div class="box-card ">
+            <img src="/img/${team.picture}" alt=""> 
+            <div class = "d-flex flex-column align-items-center p-2">         
+            <h3>${team.name}</h3>       
+            <h4>${team.role}</h4>   
+            </div> 
+         </div> 
+        `;
+    console.log(team.role);
+    console.log(team.picture);
+    console.log(team.name);
+    col.innerHTML = template;
     rowEl.append(col);
-  
+
 };
