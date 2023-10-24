@@ -66,7 +66,7 @@ const rowEl = document.querySelector('.row');
 
 // ciclo per stampare gli elementi dell'array
 // for (let i = 0; i < ourTeam.length; i++) {
-    for(let value of ourTeam){
+    for(let value of ourTeam){ // cicla e prende solo il valore
     printBox(value);
 
 };
@@ -83,6 +83,7 @@ btn.addEventListener('click', function(){
  }
  ourTeam.push(newEmployer);
 printBox(newEmployer);
+reset()
 
 });
 // creo funzione per mettere le box dentro a html
@@ -100,4 +101,13 @@ function printBox(team){
         `;
     col.innerHTML = template;
     rowEl.append(col);
+
 };
+
+// creo una funzione che mi cancella tutto 
+function reset (){
+  document.getElementById('newName').value ='';
+  document.getElementById('newRole').value ='';
+  document.getElementById('newPicture').value ='';
+
+ }
