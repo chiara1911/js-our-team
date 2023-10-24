@@ -65,10 +65,12 @@ const rowEl = document.querySelector('.row');
 
 
 // ciclo per stampare gli elementi dell'array
-for (let i = 0; i < ourTeam.length; i++) {
-    printBox(ourTeam[i]);
+// for (let i = 0; i < ourTeam.length; i++) {
+    for(let value of ourTeam){
+    printBox(value);
 
 };
+console.log(ourTeam);
 
 // creare nuova card
 
